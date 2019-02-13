@@ -1,0 +1,8 @@
+/* Author: Pavel Mednikov (hello@pavelmednikov.com) */
+.clearfix {
+  zoom: 1;
+  /* set hasLayout */
+  display: block;
+  /* resets display for IE/Win */ }
+
+/*# sourceMappingURL=style-IE.css.map */

@@ -1,0 +1,153 @@
+/* Author: Pavel Mednikov (hello@pavelmednikov.com) */
+/* ============================ */
+/* ============================ */
+/* FONTS */
+/* ============================ */
+/* ============================ */
+/* FLUID IMAGES */
+img, embed, object, video, iframe {
+  max-width: 100%; }
+
+body,
+#header .navbar-brand {
+  color: #283750; }
+
+a {
+  text-decoration: underline; }
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat;
+  font-weight: 700; }
+
+table thead th, table thead tr, table thead td,
+table tbody th,
+table tbody tr,
+table tbody td,
+.table thead th,
+.table thead tr,
+.table thead td,
+.table tbody th,
+.table tbody tr,
+.table tbody td {
+  border-color: rgba(40, 55, 80, 0.15); }
+
+.jumbotron,
+.bg-light {
+  background-color: #e7f2fc !important; }
+
+.jumbotron {
+  padding: 6rem 2rem 4rem;
+  background-color: white !important; }
+
+.bg-primary {
+  background-color: #283750 !important; }
+  .bg-primary a {
+    color: white; }
+
+.bg-secondary {
+  background-color: #d5e7f9 !important; }
+
+.btn {
+  padding: .375rem 2rem .45rem;
+  font-weight: 600; }
+
+.btn-primary,
+.btn-outline-primary {
+  border-radius: 5rem;
+  border: 2px solid rgba(40, 55, 80, 0.8);
+  color: #283750; }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active,
+  .btn-outline-primary:hover,
+  .btn-outline-primary:focus,
+  .btn-outline-primary:active {
+    border: 2px solid #283750;
+    background-color: #283750; }
+
+.btn-primary {
+  background-color: rgba(40, 55, 80, 0.8);
+  color: white;
+  border-color: transparent; }
+
+.card {
+  border: 2px solid rgba(40, 55, 80, 0.15);
+  border-radius: 0;
+  color: #283750;
+  background-color: #e7f2fc; }
+
+a.card {
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out; }
+  a.card:hover {
+    border: 2px solid #283750;
+    text-decoration: none;
+    color: #283750; }
+    a.card:hover .card-footer {
+      border-top: 2px solid #283750;
+      background-color: #283750;
+      color: white; }
+
+.card-body,
+.card-footer {
+  padding: 2rem;
+  border-radius: 0 !important;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out; }
+
+.card-footer {
+  border-top: 2px solid rgba(40, 55, 80, 0.15);
+  background-color: transparent;
+  padding: 1.25rem 2rem; }
+
+#header {
+  border-bottom: 1px solid rgba(40, 55, 80, 0.15); }
+  #header .navbar {
+    padding: 1.5rem 1rem; }
+    #header .navbar a {
+      text-decoration: none; }
+  #header .navbar-brand {
+    font-weight: 800; }
+
+#cards {
+  position: relative;
+  padding-bottom: 6rem !important; }
+  #cards:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 30%;
+    background-color: white; }
+
+.footer {
+  color: white; }
+
+.pt-6,
+.py-6 {
+  padding-top: 6rem !important; }
+
+.pb-6,
+.py-6 {
+  padding-bottom: 6rem !important; }
+
+.modal-content {
+  border-radius: 0;
+  border: 2px solid #283750; }
+
+.form-control {
+  border-radius: 0;
+  /*border: 1px solid rgba(40,55,80, .80);*/ }
+
+.parsley-errors-list {
+  padding-left: 0;
+  list-style-type: none; }
+  .parsley-errors-list li {
+    font-size: .875rem;
+    color: #dc3545; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,111 @@
+/* Author: Pavel Mednikov (hello@pavelmednikov.com) */
+// VARIABLES
+// --colors
+$white:             #fff;
+
+$grey:              rgba(40,55,80, .15);
+
+$brand:             #283750;
+$brand-light:       #e7f2fc;
+
+$white-blue:        #f3f5f9;
+
+$black:             #222;
+
+
+
+// --measures
+$margin:    10px;
+$wrap:      1200px;
+
+
+// MIXINS
+// add with @include %mixin_name%
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin border-radius-2($radius1, $radius2) {
+  -webkit-border-radius: $radius1 $radius2;
+     -moz-border-radius: $radius1 $radius2;
+      -ms-border-radius: $radius1 $radius2;
+          border-radius: $radius1 $radius2;
+}
+
+@mixin border-radius-3($radius1, $radius2, $radius3) {
+  -webkit-border-radius: $radius1 $radius2 $radius3;
+     -moz-border-radius: $radius1 $radius2 $radius3;
+      -ms-border-radius: $radius1 $radius2 $radius3;
+          border-radius: $radius1 $radius2 $radius3;
+}
+
+@mixin border-radius-4($radius1, $radius2, $radius3, $radius4) {
+  -webkit-border-radius: $radius1 $radius2 $radius3, $radius4;
+     -moz-border-radius: $radius1 $radius2 $radius3, $radius4;
+      -ms-border-radius: $radius1 $radius2 $radius3, $radius4;
+          border-radius: $radius1 $radius2 $radius3, $radius4;
+}
+
+@mixin animation($duration) {
+  -webkit-transition: all $duration ease-in-out;
+     -moz-transition: all $duration ease-in-out; 
+       -o-transition: all $duration ease-in-out; 
+          transition: all $duration ease-in-out;
+}
+
+// Specific mixins
+@mixin box-shadow($size, $color){
+  -webkit-box-shadow: 0px 0px 2*$size $size $color;
+     -moz-box-shadow: 0px 0px 2*$size $size $color;
+          box-shadow: 0px 0px 2*$size $size $color;
+}
+
+
+// FONTS
+@import 'fonts';
+
+// CSS RESET
+// @import 'reset';
+
+// FLUID IMAGES
+@import 'fluid-images';
+
+// SETTINGS & GRID
+@import 'settings';
+
+
+// MAIN STYLES
+@import 'main';
+
+
+// // MEDIA QUERIES
+// // --to 1366
+// @media only screen and (max-width: 1365px) {
+//   @import '960';
+// }
+
+// // --to 1023
+// @media only screen and (max-width: 1023px) {
+//   @import '720';
+// }
+
+// // --to 740
+// @media only screen and (max-width: 740px) {
+//   @import '320';
+// }
+
+
+@media (max-width: 991px) {
+  
+}
+
+@media (max-width: 767px) {
+  
+}
+
+@media (max-width: 575px) {
+  
+}

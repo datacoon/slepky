@@ -1,0 +1,321 @@
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: default
+---
+
+{% include header.html%}
+
+<!-- HERO -->
+<div class="jumbotron bg-white mb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
+        <h1 class="display-5">Готовые базы данных<br> по регионам и&nbsp;муниципалитетам РФ</h1>
+        <p>Источник подготовленных «слепков» баз данных, содержащих информацию по государственным закупкам и юридическим лицам регионов и муниципалитетов РФ. Используется в работе аналитиками, чиновниками, специалистами по проверке контрагентов и участниками разработки стратегий развития регионов.</p>
+      </div>
+    </div>
+    <!-- <hr class="my-4"> -->
+  </div>
+</div>
+
+
+<section id="cards" class="section bg-secondary py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card-deck">
+
+          <a href="#bdgz" class="card">
+              <div class="card-body">
+                <h5 class="card-title">Базы данных по государственным закупкам</h5>
+                <p class="card-text">Данные по контрактам, закупкам, протоколам и пр. по 44-ФЗ и 223-ФЗ, относящиеся к конкретному региону или муниципалитету.</p>
+              </div>
+              <div class="card-footer"><strong>Подробнее</strong></div>
+          </a>
+
+          <a href="#bdegrul"class="card">
+            <div class="card-body">
+              <h5 class="card-title">Базы данных по данным юридических лиц (ЕГРЮЛ)</h5>
+              <p class="card-text">Данные по регистрационным данным юридических лиц, относящиеся к конкретному региону или муниципалитету.</p>
+            </div>
+            <div class="card-footer"><strong>Подробнее</strong></div>
+          </a>
+
+          <a href="#bdrosstat" class="card">
+            <div class="card-body">
+              <h5 class="card-title">Базы данных по бухгалтерской отчетности юридических лиц (Росстат)</h5>
+              <p class="card-text">Данные по балансам и отчетам о прибылях и убытках юридических лиц региона или муниципалитета, поданным в Росстат.</p>
+            </div>
+            <div class="card-footer"><strong>Подробнее</strong></div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="bdgz" class="section bg-light py-6">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Базы данных по государственным закупкам</h2>
+        <p class="pb-5">Мы предлагаем данные по госзакупкам для конкретно выбранного региона или муниципалитета, только по необходимым сущностям (контрактам / поставщикам / протоколам и т.д.) в требуемом формате и за конкретный период времени</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Региональная разбивка</th>
+              <th>Предлагаемые сущности</th>
+              <th>Форматы</th>
+              <th>Период</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul class="pl-4">
+                  <li>любой регион РФ</li>
+                  <li>любой муниципалитет РФ</li>
+                </ul>
+              </td>
+              <td>
+                <ul class="pl-4">
+                  <li>Контракты по 44-ФЗ</li>
+                  <li>Договоры закупок 223-ФЗ</li>
+                  <li>Извещения о закупках по 44-ФЗ</li>
+                  <li>Извещения о проведении закупок 223-ФЗ</li>
+                  <li>Протоколы работы комиссий по процедурам 44-ФЗ</li>
+                  <li>Протоколы по закупкам 223-ФЗ*</li>
+                </ul>
+              </td>
+              <td>
+                <ul class="pl-4">
+                  <li>JSON</li>
+                  <li>CSV/XLSX**</li>
+                </ul>
+              </td>
+              <td>
+                <ul class="pl-4">
+                  <li>2013</li>
+                  <li>2014</li>
+                  <li>2015</li>
+                  <li>2016</li>
+                  <li>2017</li>
+                  <li>2018</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p><small>* Помимо указанных сущностей, доступны также почти все остальные сущности, присутствующие в Единой информационной системе государственных закупок, однако они редко бывают востребованы, поэтому не указываются отдельно.</small></p>
+        <p><small>** Данный формат возможен при выборе клиентом конкретного набора полей («как есть» в табличный формат CSV/XLSX данные сущности не умещаются).</small></p>
+        <div class="text-center">
+          <button type="button" class="btn btn-outline-primary"><i class="fas fa-file-download"></i> Скачать пример</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#requestForm">Оформить заявку</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="bdegrul" class="section bg-secondary py-6">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Базы данных по данным юридических лиц (ЕГРЮЛ)</h2>
+        <p class="pb-5">Мы предлагаем данные по регистрационным данным юридических лиц, занесенных в ЕГРЮЛ по конкретному региону или муниципалитету, в требуемом формате и на текущий момент</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Региональная разбивка</th>
+              <th>Предлагаемые сущности</th>
+              <th>Форматы</th>
+              <th>Период</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul class="pl-4">
+                  <li>любой регион РФ</li>
+                  <li>любой муниципалитет РФ</li>
+                </ul>
+              </td>
+              <td>
+                <ul class="pl-4">
+                  <li>Все данные ЕГРЮЛ</li>
+                </ul>
+              </td>
+              <td>
+                <ul class="pl-4">
+                  <li>JSON</li>
+                  <li>CSV/XLSX**</li>
+                </ul>
+              </td>
+              <td>
+                <ul class="pl-4">
+                  <li>На текущий момент</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="text-center">
+          <button type="button" class="btn btn-outline-primary"><i class="fas fa-file-download"></i> Скачать пример</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#requestForm">Оформить заявку</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="bdrosstat" class="section bg-light py-6">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Базы данных по бухгалтерской отчетности юридических лиц (Росстат)</h2>
+        <p class="pb-5">Мы предлагаем данные по экономическим показателям деятельности организаций на основе балансов и отчетов о прибылях и убытках, в требуемом формате и за конкретный период времени</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Региональная разбивка</th>
+              <th>Предлагаемые сущности</th>
+              <th>Форматы</th>
+              <th>Период</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul class="pl-4">
+                  <li>любой регион РФ</li>
+                  <li>любой муниципалитет РФ</li>
+                </ul>
+              </td>
+              <td>
+                <ul class="pl-4">
+                  <li>Данные из бухгалтерских балансов и отчетах о прибылях и убытках</li>
+                </ul>
+              </td>
+              <td>
+                <ul class="pl-4">
+                  <li>JSON</li>
+                  <li>CSV/XLSX**</li>
+                </ul>
+              </td>
+              <td>
+                <ul class="pl-4">
+                  <li>2013</li>
+                  <li>2014</li>
+                  <li>2015</li>
+                  <li>2016</li>
+                  <li>2017</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="text-center">
+          <button type="button" class="btn btn-outline-primary"><i class="fas fa-file-download"></i> Скачать пример</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#requestForm">Оформить заявку</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="price" class="section py-6">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Стоимость баз данных</h2>
+        <p class="pb-5">Цена в значительной мере зависит от того, какой именно регион / муниципалитет выбирает клиент, поэтому предварительно мы предлагаем ориентировочные цены. Конкретная цена определяется после оформления заявки с указанием точных параметров запроса</p>
+
+        <div class="card-deck pb-5">
+
+          <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Базы данных по государственным закупкам</h5>
+                <p class="card-text">Ориентировочная цена за базу данных по региону РФ (кроме Москвы) по одной сущности (к примеру, контракты по 44-ФЗ) за один год (за 2017) – <strong>10&nbsp;000&nbsp;рублей</strong>.</p>
+                <p class="card-text">При возрастании количества требуемых периодов цена возрастает незначительно (1-2&nbsp;000&nbsp;рублей за каждый год).</p>
+                <p class="card-text">При возрастании количества требуемых сущностей цена возрастает примерно на 50% первоначальной стоимости (5&nbsp;000&nbsp;рублей за дополнительную сущность).</p>
+              </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Базы данных по данным юридических лиц (ЕГРЮЛ)</h5>
+              <p class="card-text">Ориентировочная цена за базу данных по региону РФ (кроме Москвы) – <strong>10&nbsp;000&nbsp;рублей</strong>.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Базы данных по бухгалтерской отчетности юридических лиц (Росстат)</h5>
+              <p class="card-text">Ориентировочная цена за базу данных по региону РФ (кроме Москвы) за один год (за 2017) – <strong>10&nbsp;000&nbsp;рублей</strong>.</p>
+              <p class="card-text">При возрастании количества требуемых периодов цена возрастает незначительно (1-2 000 рублей за каждый год).</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center">
+          <button type="button" class="btn btn-primary"><i class="fas fa-file-download"></i> Скачать образец договора</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dopopportunities" class="section py-6 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Дополнительные возможности</h2>
+        <p>Если вас интересует постоянный автоматизированный доступ к данным, которые мы предлагаем, напрямую для вашей информационной системы, вам больше подойдет доступ через API Более подробно о возможностях подобного доступа и о других наборах данных, которые мы предлагаем, вы можете узнать по адресу <a href="https://apicrafter.ru/">apicrafter.ru</a></p>
+        <p>Если вас интересуют особенные конфигурации баз данных, которые вы хотите получить, и вы не уверены, обладаем ли мы нужными вам данными и компетенциями по созданию баз данных, свяжитесь с нами по адресу <a href="mailto:apicrafter@apicrafter.ru">apicrafter@apicrafter.ru</a>, и мы с удовольствием ответим на ваши вопросы.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="footer bg-primary py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        ООО «ОДСС» при поддержке <a href="https://infoculture.ru">АНО «Инфокультура»</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% include form.html %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

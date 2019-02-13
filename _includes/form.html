@@ -1,0 +1,70 @@
+<!-- Start Modal -->
+<div class="modal fade" id="requestForm" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLabel">Заявка</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+        <form action="https://formspree.io/apicrafter@apicrafter.ru" method="POST" data-parsley-validate="">
+
+          <div class="form-group">
+            <label for="formDB">Наименование базы данных<span class="text-danger">*</span></label>
+            <select id="formDB" name="database" class="form-control" required>
+              <option disabled selected>Выберите базу данных</option>
+              <option>Госзакупки и госконтракты</option>
+              <option>Данные юридических лиц (ЕГРЮЛ)</option>
+              <option>Бухгалтерская отчетность юридических лиц (Росстат)</option>
+            </select>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+            <label for="formName">Ваше имя</label>
+            <input type="text" name="full_name" class="form-control" id="formName" placeholder="Введите ваше имя">
+            </div>
+            <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+              <label for="formEmail">E-mail<span class="text-danger">*</span></label>
+              <input type="email" name="_replyto" class="form-control" id="formEmail" placeholder="Введите ваш E-mail" required="">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="formPhone">Телефон</label>
+            <input type="phone" name="phone" class="form-control" id="formPhone" placeholder="Введите номер вашего телефона">
+          </div>
+
+          <div class="form-group">
+            <label for="formOrganization">Организация</label>
+            <input type="text" name="full_name" class="form-control" id="formOrganization" placeholder="Введите название вашей организации">
+          </div>
+
+          <div class="form-group">
+            <label for="formInfo">Дополнительная информация</label>
+            <textarea name="info" class="form-control" id="formInfo" rows="3" placeholder="Введите дополнительную информацию"></textarea>
+          </div>
+
+          <div class="form-group">
+            <p class="warn">Отправляя заявку, я соглашаюсь на обработку персональных данных.</p>
+          </div>
+
+          <div class="form-group text-center">
+            <input class="btn btn-lg btn-primary" type="submit" value="Отправить заявку">
+          </div>
+
+          <input type="hidden" name="_subject" value="Заявка с сайта слепков">
+          <!-- <input type="hidden" name="_next" value="http://apicrafter.ru/thanks"> -->
+          <input type="hidden" name="_language" value="ru" />
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END Modal -->

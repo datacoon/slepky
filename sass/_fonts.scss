@@ -1,0 +1,14 @@
+/* ============================ */
+/* ============================ */
+/* FONTS */
+@mixin fontcaption{
+    font-family: 'Roboto Slab', serif;
+}
+
+@mixin fontstack{
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin fastack{
+    font-family: FontAwesome, 'Open Sans', sans-serif;
+}

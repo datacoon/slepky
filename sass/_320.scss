@@ -1,0 +1,222 @@
+/* ====== 320px ====== */
+/* SETTINGS */
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+h5{
+    font-size: 18px;
+}
+
+h6{
+    font-size: 16px;
+}
+
+/* GRID */
+.wrap{
+    width: 320px;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6{
+    width: 140px;
+}
+
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12{
+    width: 300px;
+}
+
+
+.col-1-full,
+.col-2-full,
+.col-3-full,
+.col-4-full,
+.col-5-full,
+.col-6-full{
+    width: 160px;
+}
+
+.col-7-full,
+.col-8-full,
+.col-9-full,
+.col-10-full,
+.col-11-full,
+.col-12-full{
+    width: 320px;
+}
+
+
+.col-offset-0,
+.col-offset-1,
+.col-offset-2,
+.col-offset-3,
+.col-offset-4,
+.col-offset-5{
+    margin-left: 10px;
+}
+
+
+.col-offset-6,
+.col-offset-7,
+.col-offset-8,
+.col-offset-9,
+.col-offset-10,
+.col-offset-11{
+    margin-left: 170px;
+}
+
+
+
+
+// medium screen sizes
+.col-m-1,
+.col-m-2,
+.col-m-3,
+.col-m-4,
+.col-m-5,
+.col-m-6{
+    width: 140px;
+}
+
+.col-m-7,
+.col-m-8,
+.col-m-9,
+.col-m-10,
+.col-m-11,
+.col-m-12{
+    width: 300px;
+}
+
+
+.col-m-1-full,
+.col-m-2-full,
+.col-m-3-full,
+.col-m-4-full,
+.col-m-5-full,
+.col-m-6-full{
+    width: 160px;
+}
+
+.col-m-7-full,
+.col-m-8-full,
+.col-m-9-full,
+.col-m-10-full,
+.col-m-11-full,
+.col-m-12-full{
+    width: 320px;
+}
+
+
+.col-m-offset-0,
+.col-m-offset-1,
+.col-m-offset-2,
+.col-m-offset-3,
+.col-m-offset-4,
+.col-m-offset-5{
+    margin-left: 10px;
+}
+
+.col-m-offset-6,
+.col-m-offset-7,
+.col-m-offset-8,
+.col-m-offset-9,
+.col-m-offset-10,
+.col-m-offset-11{
+    margin-left: 170px;
+}
+
+
+
+
+// small screen sizes
+.col-s-1{
+    width: 60px;
+}
+
+.col-s-2{
+    width: 140px;
+}
+
+.col-s-3{
+    width: 220px;
+}
+
+.col-s-4{
+    width: 300px;
+}
+
+
+.col-s-1-full{
+    width: 80px;
+}
+
+.col-s-2-full{
+    width: 160px;
+}
+
+.col-s-3-full{
+    width: 240px;
+}
+
+.col-s-4-full{
+    width: 320px;
+}
+
+
+.col-s-offset-0{
+    margin-left: 10px !important;
+}
+
+.col-s-offset-1{
+    margin-left: 90px;
+}
+
+.col-s-offset-2{
+    margin-left: 170px;
+}
+
+.col-s-offset-3{
+    margin-left: 250px;
+}
+
+
+.percent-grid{
+    .grid-s-1{
+        width: 100%;
+    }
+    .grid-s-2{
+        width: 50%;
+    }
+    .grid-s-3{
+        width: 33.333333%
+    }
+    .grid-s-4{
+        width: 25%;
+    }
+}
+
+
+
+
+/* PAGE STYLES */

@@ -1,0 +1,40 @@
+COMPILED_DIR = "compiled_site"
+JEKYLL_DIR = "jekyll_site"
+
+desc "Build Jekyll site and copy files"
+task :build do
+
+  puts "\n## Build Jekyll"
+  status = system("jekyll build")
+  puts status ? "== Successfully build Jekyll" : "== Failed build Jekyll"
+
+  puts "\n## Empty old version site in #{COMPILED_DIR}"
+  status = system("rm -r ../#{COMPILED_DIR}/*") unless Dir['../#{COMPILED_DIR}/*'].empty?
+  puts status ? "== Successfully empty folder" : "== Failed empty folder"
+
+  puts "\n## Copy _site folder to #{COMPILED_DIR}"
+  status = system("cp -r _site/* ../#{COMPILED_DIR}/")
+  puts status ? "== Copied" : "== Copy failed"
+
+  puts "\n## Empty old site files in root directory"
+  all = FileList.new("../**")
+  except = FileList[
+    "../.git/", 
+    "../.sass-cache/", 
+    "../#{COMPILED_DIR}", 
+    "../#{JEKYLL_DIR}", 
+    "../.gitignore", 
+    "../.gitmodules", 
+    "../CNAME", 
+    "../README.md"
+  ]
+  RESULT = all - except
+  status = system("rm -r #{RESULT}") unless RESULT.empty?
+  puts status ? "== Sucsessfully empty old site files" : "== Failed empty old site files"
+
+  puts "\n## Copy _site folder to root folder"
+  status = system("cp -r ../#{COMPILED_DIR}/* ../")
+  puts status ? "== Copied" : "== Copy failed"
+
+  puts "\n+++ FINISHED +++"
+end
